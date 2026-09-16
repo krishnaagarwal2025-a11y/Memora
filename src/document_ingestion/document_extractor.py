@@ -1,9 +1,8 @@
 from pathlib import Path
 
-from pdf_extractor import extract_text_from_pdf
-from docx_extractor import extract_text_from_docx
-from text_extractor import extract_text_from_file
-
+from .pdf_extractor import extract_text_from_pdf
+from .docx_extractor import extract_text_from_docx
+from .text_extractor import extract_text_from_file
 
 def extract_document(file_path):
     path = Path(file_path)
